@@ -1,11 +1,11 @@
-// Expenses.js
 import React from 'react';
 import ExpenseItem from './ExpenseItem';
-import './Expenses.css'; 
+import Card from './Card'; // Lisää import Card-komponentille
+import './Expenses.css';
 
 function Expenses(props) {
   return (
-    <div className="expenses">
+    <Card className="expenses"> {/* Muutetaan ulompi div Card-komponentiksi */}
       {props.expenses.map((expense, index) => (
         <ExpenseItem
           key={index}
@@ -14,7 +14,7 @@ function Expenses(props) {
           date={expense.date}
         />
       ))}
-    </div>
+    </Card>
   );
 }
 
