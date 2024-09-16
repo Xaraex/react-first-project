@@ -50,9 +50,10 @@ function App() {
         amount={expenses[3].amount}
         date={expenses[3].date}
       />
-      <p>Oma Nimi / VAMK / BIT</p>
+      <p>Janne Kolehmainen / VAMK / BIT</p>
     </div>
   );
+  
 }
 
 export default App;
