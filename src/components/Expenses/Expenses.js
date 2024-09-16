@@ -1,11 +1,11 @@
 import React from 'react';
 import ExpenseItem from './ExpenseItem';
-import Card from './Card'; // Lisää import Card-komponentille
+import Card from '../UI/Card';
 import './Expenses.css';
 
-function Expenses(props) {
+const Expenses = (props) => {
   return (
-    <Card className="expenses"> {/* Muutetaan ulompi div Card-komponentiksi */}
+    <Card className="expenses">
       {props.expenses.map((expense, index) => (
         <ExpenseItem
           key={index}
