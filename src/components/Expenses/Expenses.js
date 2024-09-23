@@ -1,21 +1,23 @@
 import React from 'react';
 import ExpenseItem from './ExpenseItem';
-import Card from '../UI/Card';
 import './Expenses.css';
 
 const Expenses = (props) => {
+  // Varmistetaan, että items on aina taulukko
+  const expenses = props.items || [];
+
   return (
-    <Card className="expenses">
-      {props.expenses.map((expense, index) => (
+    <div className="expenses">
+      {expenses.map((expense) => (
         <ExpenseItem
-          key={index}
+          key={expense.id}
           title={expense.title}
           amount={expense.amount}
           date={expense.date}
         />
       ))}
-    </Card>
+    </div>
   );
-}
+};
 
 export default Expenses;

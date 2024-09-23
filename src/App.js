@@ -1,5 +1,4 @@
 import React from 'react';
-
 import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses'; 
 
@@ -31,10 +30,17 @@ const App = () => {
     },
   ];
 
+  // Uusi addExpenseHandler funktio, joka vastaanottaa child-komponentilta tiedon
+  const addExpenseHandler = (expense) => {
+    console.log('In App.js');
+    console.log(expense); // Tämä tulostaa siirretyn tiedon konsoliin
+  };
+
   return (
     <div>
-      <NewExpense />
-      <Expenses expenses={expenses} /> 
+      {/* Välitetään addExpenseHandler funktio propsina NewExpense-komponentille */}
+      <NewExpense onAddExpense={addExpenseHandler} />
+      <Expenses items={expenses} /> 
       <p>Janne Kolehmainen / VAMK / BIT</p>
     </div>
   );
