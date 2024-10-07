@@ -8,17 +8,22 @@ const Expenses = (props) => {
   // Tilamuuttuja suodatetulle vuodelle
   const [filteredYear, setFilteredYear] = useState('2024');
 
-  // Funktio, jota kutsutaan, kun valitaan uusi vuosi
+  // Funktio jota kutsutaan, kun valitaan uusi vuosi
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
   };
 
+  // Suodatetaan kulut valitun vuoden mukaan
+  const filteredExpenses = props.items.filter((expense) => {
+    return expense.date.getFullYear().toString() === filteredYear;
+  });
+
   return (
     <Card className="expenses">
       <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
-      {props.items.map((expense) => (
+      {filteredExpenses.map((expense) => (
         <ExpenseItem 
-          key={expense.id} 
+          key={expense.id}  // Tässä on key-proppi
           title={expense.title} 
           amount={expense.amount} 
           date={expense.date} 
