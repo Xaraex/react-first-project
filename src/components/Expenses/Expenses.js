@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ExpenseItem from './ExpenseItem';
 import Card from '../UI/Card';
 import ExpensesFilter from './ExpensesFilter';
+import ExpensesList from './ExpensesList';
 import './Expenses.css';
 
 const Expenses = (props) => {
@@ -34,26 +34,11 @@ const Expenses = (props) => {
   )}
   */
 
-  // Oletusviesti, jos kulut eivät täytä ehtoja
-  let expensesContent = <p>No expenses found.</p>;
-
-  // Jos kulut löytyvät, muutetaan expensesContent sisällöksi JSX-elementtien taulukko
-  if (filteredExpenses.length > 0) {
-    expensesContent = filteredExpenses.map((expense) => (
-      <ExpenseItem
-        key={expense.id}
-        title={expense.title}
-        amount={expense.amount}
-        date={expense.date}
-      />
-    ));
-  }
-
   return (
     <Card className="expenses">
       <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
-      {/* Näytetään JSX:ssä expensesContent */}
-      {expensesContent}
+      {/* Näytetään uusi ExpensesList-komponentti ja välitetään propseina filteredExpenses */}
+      <ExpensesList items={filteredExpenses} />
     </Card>
   );
 };
