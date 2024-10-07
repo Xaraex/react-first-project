@@ -10,8 +10,6 @@ const Expenses = (props) => {
 
   // Funktio, jota kutsutaan, kun valitaan uusi vuosi
   const filterChangeHandler = (selectedYear) => {
-    // console.log('Expenses.js');
-    // console.log(selectedYear);
     setFilteredYear(selectedYear);
   };
 
