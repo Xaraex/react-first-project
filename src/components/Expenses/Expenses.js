@@ -1,22 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ExpenseItem from './ExpenseItem';
+import Card from '../UI/Card';
+import ExpensesFilter from './ExpensesFilter';
 import './Expenses.css';
 
 const Expenses = (props) => {
-  // Varmistetaan, että items on aina taulukko
-  const expenses = props.items || [];
+  // Tilamuuttuja suodatetulle vuodelle
+  const [filteredYear, setFilteredYear] = useState('2024');
+
+  // Funktio, jota kutsutaan, kun valitaan uusi vuosi
+  const filterChangeHandler = (selectedYear) => {
+    // console.log('Expenses.js');
+    // console.log(selectedYear);
+    setFilteredYear(selectedYear);
+  };
 
   return (
-    <div className="expenses">
-      {expenses.map((expense) => (
-        <ExpenseItem
-          key={expense.id}
-          title={expense.title}
-          amount={expense.amount}
-          date={expense.date}
+    <Card className="expenses">
+      <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
+      {props.items.map((expense) => (
+        <ExpenseItem 
+          key={expense.id} 
+          title={expense.title} 
+          amount={expense.amount} 
+          date={expense.date} 
         />
       ))}
-    </div>
+    </Card>
   );
 };
 
