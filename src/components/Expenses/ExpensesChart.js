@@ -1,5 +1,5 @@
 import React from 'react';
-import Chart from '../Chart/Chart';  // Updated to match uppercase folder
+import Chart from '../Chart/Chart.js';  // Updated to match uppercase folder
 
 const ExpensesChart = (props) => {
     console.log('ExpensesChart props:', props);  // Debug log
