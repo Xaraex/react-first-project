@@ -1,0 +1,107 @@
+[33mcommit 90d4fc60fd6bf6a82b87841d86a132ea7148ccbc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Oct 7 14:33:14 2024 +0300
+
+    Tehtävä 17: Päivitetty ExpenseItem käyttämään <li> elementtiä semanttisuuden parantamiseksi
+
+[33mcommit 63ecdbc01d50c33158002ecf9e3550dd866bd163[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Oct 7 13:49:31 2024 +0300
+
+    Tehtävä 17: Siirretty ehtorakenne JSX:n ulkopuolelle ja määritetty oletusarvo expensesContent-muuttujalle
+
+[33mcommit 85142e089a5981f591b68973d71549d9ab1e5bdd[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Oct 7 13:29:16 2024 +0300
+
+    Tehtävä 15: Lisätty filter-toiminto, joka suodattaa kulut valitun vuoden mukaan Expenses-komponentissa
+
+[33mcommit 62e70db2e0f68e002f4930b1dde96cad6efc625a[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Oct 7 13:24:38 2024 +0300
+
+    Tehtävä 14: Siirretty expenses-taulukko komponentin ulkopuolelle ja lisätty addExpenseHandler, joka päivittää tilan edellisten kulujen perusteella
+
+[33mcommit 4fdf26fe61838b88720f9cf813bd4181aca1ebec[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Oct 7 13:12:09 2024 +0300
+
+    Tehtävä 13: Lisätty dynaaminen datan renderöinti map-metodilla ja poistettu manuaaliset ExpenseItem-komponentit
+
+[33mcommit eda6ce3387700a13d81d289dad0e1fabcbdf237c[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Oct 7 12:58:23 2024 +0300
+
+    Tehtävä 12: Lisätty ExpensesFilter ja Expenses-komponenttien muutokset, jotka mahdollistavat suodatuksen ja tilan hallinnan
+
+[33mcommit a566b259b63e84228fd21af3925b7042bd2cff75[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Sep 23 15:29:01 2024 +0300
+
+    TEHTÄVÄ 11. Käyttäjän syötteen käsittely: formin käsittely (tiedon välitys child->parent)
+
+[33mcommit 4f6555690773ed409cc59206c3acee4977ca0c29[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Sep 23 14:50:39 2024 +0300
+
+    Tehtävä 10: Lisätty titleChangeHandler ja onChange kuuntelija. Tulostetaan käyttäjän syöttämä arvo konsoliin.
+
+[33mcommit 9cbe2fe399c07b1f0960fe338435a2affa0365de[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Sep 23 14:20:34 2024 +0300
+
+    Tehtävä 9: Lisättiin ExpenseForm-komponentti NewExpense-komponenttiin ja muotoiltiin syötekentät.
+
+[33mcommit f6892dd1236aa52e8b53bbd63d73ba288cebe541[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Sep 23 14:04:32 2024 +0300
+
+    Tehtävä 8: Lisätty tilanhallinta (useState) ExpenseItem-komponenttiin, joka mahdollistaa otsikon päivittämisen klikkaamalla nappia
+
+[33mcommit 0ff63a43dede54dd3089c031206e98ea8723a939[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Sep 16 14:10:42 2024 +0300
+
+    Tehtävä 7: Päivitetty App.js - uudet expenses-tiedot ja muokkaukset
+
+[33mcommit 07f105cb4448934f34ec66c7d2841a2cd892ba58[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Sep 16 14:00:31 2024 +0300
+
+    Tehtävä 6: Muutettu Expenses ja ExpenseItem komponentit käyttämään Card-komponenttia ulkoasulle
+
+[33mcommit 05cb5d5e59dec1f28473e8bd9a319bfbe80752c1[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Sep 16 13:35:24 2024 +0300
+
+    Päivitetty Expenses-komponentti: erotettu ExpenseItemit ja lisätty tyylit
+
+[33mcommit 0ef97e4d08e51db926284d403053545c788d437d[m
+Author: Xaraex <kolejanne@gmail.com>
+Date:   Mon Sep 16 13:06:34 2024 +0300
+
+    Päivitetty tehtävä 4: Komponenttien parannukset ja koodin siistiminen
+
+[33mcommit 48433464c4b85b3fdacd69894cb69f024bb42e68[m
+Author: janne kolehmainen <e2301997@edu.vamk.fi>
+Date:   Mon Sep 16 12:53:21 2024 +0300
+
+    Tehtävä 3
+
+[33mcommit 0b5c5e924de4707e7efee9ce4a635b5445d839f6[m
+Author: e2301997 <e2301997@edu.vamk.fi>
+Date:   Mon Sep 9 16:40:03 2024 +0300
+
+    Updated ExpenseItem component with CSS styling
+
+[33mcommit bd66570327f8962633e2c7e9bfec2fce23771523[m
+Author: janne kolehmainen <e2301997@edu.vamk.fi>
+Date:   Thu Sep 5 10:57:25 2024 +0300
+
+    Initial commit
+
+[33mcommit 9069ea6de206b8929b45e774ade896b4ce3bfe4a[m
+Author: Kolehmainen <e2301997@edu.vamk.fi>
+Date:   Thu Sep 5 10:44:44 2024 +0300
+
+    Initialize project using Create React App

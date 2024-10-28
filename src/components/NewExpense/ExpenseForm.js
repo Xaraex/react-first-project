@@ -24,7 +24,7 @@ const ExpenseForm = (props) => {
 
     const expenseData = {
       title: enteredTitle,
-      amount: +enteredAmount,  // Bugikorjaus: Muutetaan enteredAmount stringistä numeroksi
+      amount: +enteredAmount, // Bugikorjaus: Muutetaan enteredAmount stringistä numeroksi
       date: new Date(enteredDate),
     };
 
@@ -70,6 +70,7 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className='new-expense__actions'>
+        <button type='button' onClick={props.onCancel}>Cancel</button> {/* ✅ Cancel-painike lisätty */}
         <button type='submit'>Add Expense</button>
       </div>
     </form>
